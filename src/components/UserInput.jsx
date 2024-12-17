@@ -1,4 +1,4 @@
-export default function UserInput({onUpdate}) {
+export default function UserInput({onUpdate, userInput}) {
   return (
     <section id="user-input">
       <div className="input-group">
@@ -7,6 +7,7 @@ export default function UserInput({onUpdate}) {
           <input
             type="number"
             required
+            value={userInput.initialInvestment}
             onChange={onUpdate}
             name="initialInvestment"
           />
@@ -16,6 +17,7 @@ export default function UserInput({onUpdate}) {
           <input
             type="number"
             required
+            value={userInput.annualInvestment}
             onChange={onUpdate}
             name="annualInvestment"
           />
@@ -27,13 +29,20 @@ export default function UserInput({onUpdate}) {
           <input
             type="number"
             required
+            value={userInput.expectedReturn}
             onChange={onUpdate}
             name="expectedReturn"
           />
         </p>
         <p>
           <label>Duration</label>
-          <input type="number" required onChange={onUpdate} name="duration" />
+          <input
+            type="number"
+            required
+            value={userInput.duration}
+            onChange={onUpdate}
+            name="duration"
+          />
         </p>
       </div>
     </section>
