@@ -14,11 +14,11 @@ export default function Resultados({userInput}) {
       <table id="result">
         <thead>
           <tr>
-            <th>Year</th>
-            <th>Investment Value</th>
-            <th>Interest (Year)</th>
-            <th>Total Interest</th>
-            <th>Investment Capital</th>
+            <th>Año</th>
+            <th>Valor de inversión</th>
+            <th>Interés (año)</th>
+            <th>Total Interés</th>
+            <th>Capital Invertido</th>
           </tr>
         </thead>
         <tbody>

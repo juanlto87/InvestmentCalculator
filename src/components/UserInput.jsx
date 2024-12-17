@@ -3,7 +3,7 @@ export default function UserInput({onUpdate, userInput}) {
     <section id="user-input">
       <div className="input-group">
         <p>
-          <label>Inicial investment</label>
+          <label>Inversión Inicial</label>
           <input
             type="number"
             required
@@ -13,7 +13,7 @@ export default function UserInput({onUpdate, userInput}) {
           />
         </p>
         <p>
-          <label>Anual investment</label>
+          <label>Inversión Anual</label>
           <input
             type="number"
             required
@@ -25,7 +25,7 @@ export default function UserInput({onUpdate, userInput}) {
       </div>
       <div className="input-group">
         <p>
-          <label>Expected Return</label>
+          <label>% Retorno Esperado</label>
           <input
             type="number"
             required
@@ -35,7 +35,7 @@ export default function UserInput({onUpdate, userInput}) {
           />
         </p>
         <p>
-          <label>Duration</label>
+          <label>Duración</label>
           <input
             type="number"
             required

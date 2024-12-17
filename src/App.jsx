@@ -29,7 +29,7 @@ function App() {
       <UserInput onUpdate={handleChangeValues} userInput={valores} />
       {inputIsValid && <Resultados userInput={valores} />}
       {!inputIsValid && (
-        <p className="center">Please enter valid data input..</p>
+        <p className="center">Por favor, ingresar valores válidos..</p>
       )}
     </>
   );
